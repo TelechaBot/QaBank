@@ -80,7 +80,7 @@ for k, i in data.items():
             FileN = Dir + k + ".json"
             WriteOut(Con, FileN, k)
             Useful[k] = {
-                "Path": FileN,
+                # "Path": FileN,
                 "Name": k,
                 # "Time": str(int(time.time())),
                 "Domain": "https://raw.githubusercontent.com",
