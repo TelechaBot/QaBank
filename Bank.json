@@ -2,17 +2,17 @@
     "LGBao":{
         "Domain":"https://raw.githubusercontent.com",
         "Name":"LGBao",
-        "Path":"/home/nano/Projects/A_TelechaBot/QaBank/Library/LGBao.json",
+        "Path":"/home/runner/work/QaBank/QaBank/Library/LGBao.json",
         "Proxy":"https://raw.fastgit.org",
-        "Time":"1661516281",
+        "Time":"1661524171",
         "Url":"/TelechaBot/QaBank/main/Library/LGBao.json"
     },
     "XXQG":{
         "Domain":"https://raw.githubusercontent.com",
         "Name":"XXQG",
-        "Path":"/home/nano/Projects/A_TelechaBot/QaBank/Library/XXQG.json",
+        "Path":"/home/runner/work/QaBank/QaBank/Library/XXQG.json",
         "Proxy":"https://raw.fastgit.org",
-        "Time":"1661516278",
+        "Time":"1661524169",
         "Url":"/TelechaBot/QaBank/main/Library/XXQG.json"
     }
 }
