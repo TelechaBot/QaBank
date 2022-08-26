@@ -86,6 +86,7 @@ for k, i in data.items():
                 "Domain": "https://raw.githubusercontent.com",
                 "Proxy": "https://raw.fastgit.org",
                 "Url": "/TelechaBot/QaBank/main/Library/" + k + ".json",
+                "FullUrl": "https://raw.githubusercontent.com" + "/TelechaBot/QaBank/main/Library/" + k + ".json",
             }
 
 content = json.dumps(Useful, sort_keys=True, indent=4, separators=(',', ':'))
