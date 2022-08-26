@@ -82,7 +82,7 @@ for k, i in data.items():
             Useful[k] = {
                 "Path": FileN,
                 "Name": k,
-                "Time": str(int(time.time())),
+                # "Time": str(int(time.time())),
                 "Domain": "https://raw.githubusercontent.com",
                 "Proxy": "https://raw.fastgit.org",
                 "Url": "/TelechaBot/QaBank/main/Library/" + k + ".json",
