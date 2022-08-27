@@ -20,6 +20,13 @@
         "Proxy":"https://raw.fastgit.org",
         "Url":"/TelechaBot/QaBank/main/Library/LGBao.json"
     },
+    "Lunyu":{
+        "Domain":"https://raw.githubusercontent.com",
+        "FullUrl":"https://raw.githubusercontent.com/TelechaBot/QaBank/main/Library/Lunyu.json",
+        "Name":"Lunyu",
+        "Proxy":"https://raw.fastgit.org",
+        "Url":"/TelechaBot/QaBank/main/Library/Lunyu.json"
+    },
     "Songci":{
         "Domain":"https://raw.githubusercontent.com",
         "FullUrl":"https://raw.githubusercontent.com/TelechaBot/QaBank/main/Library/Songci.json",
