@@ -90,7 +90,8 @@ def DealData(dls, key):
                     ]
                     question1 = random.sample(some, 1)[0]
                     # question2 = f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的上面一句是？"
-                    Timu[question1[0]] = question1[1]
+                    if len(question1[0] + question1[1]) < 3500:
+                        Timu[question1[0]] = question1[1]
                 else:
                     some = [
                         (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的上面一句是？ |A:{guess_up}|B:{ganrao1}|C:{ganrao2}",
@@ -102,20 +103,59 @@ def DealData(dls, key):
                     ]
                     question2 = random.sample(some, 1)[0]
                     # question2 = f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的上面一句是？"
-                    Timu[question2[0]] = question2[1]
+                    if len(question2[0] + question2[1]) < 3500:
+                        Timu[question2[0]] = question2[1]
+
                 # Timu[question2] = guess_up
                 Timu = json.dumps(Timu, sort_keys=True, indent=4, separators=(',', ':'), ensure_ascii=False)
                 Timu = json.loads(Timu)
         return Timu
+    elif key == "Lunyu":
+        dls = json.loads(dls)
+        Timus = {}
+        for isa in range(6):
+            for iss in dls:
+                some = iss["paragraphs"]
+                chapter = iss["chapter"]
+                keys = random.randint(1, len(some) - 2)
+                # guess_up = some[keys - 1]
+                guess = some[keys]
+                guess_down = some[keys + 1]
+                s = random.sample(dls, 1)[0]["paragraphs"]
+                a = random.choice(dls)["paragraphs"]
+                ganrao1 = random.sample(s, 1)[0]
+                ganrao2 = random.sample(a, 1)[0]
+                if len(guess) > 15:
+                    some = [
+                        (f"在论语 {chapter} 中，有这样一句对话: {guess}\n请问它的下面一句是？ \n|A:{guess_down}\n|B:{ganrao1}\n|C:{ganrao2}",
+                         "A"),
+                        (f"在论语 {chapter} 中，有这样一句对话: {guess}\n请问它的下面一句是？ \n|A:{ganrao1}\n|B:{guess_down}\n|C:{ganrao2}",
+                         "B"),
+                        (f"在论语 {chapter} 中，有这样一句对话: {guess}\n请问它的下面一句是？ \n|A:{ganrao2}\n|B:{ganrao1}\n|C:{guess_down}",
+                         "C"),
+                    ]
+                    question1 = random.sample(some, 1)[0]
+                    # question2 = f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的上面一句是？"
+                    if len(question1[0] + question1[1]) < 3500:
+                        Timus[question1[0]] = question1[1]
+                # Timu[question2] = guess_up
+                Timus = json.dumps(Timus, sort_keys=True, indent=4, separators=(',', ':'), ensure_ascii=False)
+                Timus = json.loads(Timus)
+        return Timus
 
 
 def WriteOut(content, path, key):
     if content:
-        if len(content) > 222:
+        if len(str(content)) > 333:
             contents = json.dumps(content, sort_keys=True, indent=4, separators=(',', ':'), ensure_ascii=False)
             print(str(time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())) + " 写出了:" + key)
             with open(path, 'w+') as fs:
                 fs.write(contents)
+        else:
+            # print(len(content))
+            print(str(time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())) + " 跳过了:" + key)
+    else:
+        print(str(time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime())) + " 复用了:" + key)
 
 
 Useful = {}
