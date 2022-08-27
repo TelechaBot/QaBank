@@ -1,4 +1,11 @@
 {
+    "Bili":{
+        "Domain":"https://raw.githubusercontent.com",
+        "FullUrl":"https://raw.githubusercontent.com/TelechaBot/QaBank/main/Library/Bili.json",
+        "Name":"Bili",
+        "Proxy":"https://raw.fastgit.org",
+        "Url":"/TelechaBot/QaBank/main/Library/Bili.json"
+    },
     "Drive":{
         "Domain":"https://raw.githubusercontent.com",
         "FullUrl":"https://raw.githubusercontent.com/TelechaBot/QaBank/main/Library/Drive.json",
