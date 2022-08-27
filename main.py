@@ -81,11 +81,11 @@ def DealData(dls, key):
                 ganrao2 = random.sample(a, 1)[0]
                 if len(guess) > 15:
                     some = [
-                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的下面一句是？ |A:{guess_down}|B:{ganrao1}|C:{ganrao2}",
+                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的下面一句是？ |A:{guess_down}|B:{ganrao1}|C:{ganrao2}\n\n请回答大写字母",
                          "A"),
-                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的下面一句是？ |A:{ganrao1}|B:{guess_down}|C:{ganrao2}",
+                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的下面一句是？ |A:{ganrao1}|B:{guess_down}|C:{ganrao2}\n\n请回答大写字母",
                          "B"),
-                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的下面一句是？ |A:{ganrao2}|B:{ganrao1}|C:{guess_down}",
+                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的下面一句是？ |A:{ganrao2}|B:{ganrao1}|C:{guess_down}\n\n请回答大写字母",
                          "C"),
                     ]
                     question1 = random.sample(some, 1)[0]
@@ -94,11 +94,11 @@ def DealData(dls, key):
                         Timu[question1[0]] = question1[1]
                 else:
                     some = [
-                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的上面一句是？ |A:{guess_up}|B:{ganrao1}|C:{ganrao2}",
+                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的上面一句是？ |A:{guess_up}|B:{ganrao1}|C:{ganrao2}\n\n请回答大写字母",
                          "A"),
-                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的上面一句是？ |A:{ganrao1}|B:{guess_up}|C:{ganrao2}",
+                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的上面一句是？ |A:{ganrao1}|B:{guess_up}|C:{ganrao2}\n\n请回答大写字母",
                          "B"),
-                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的上面一句是？ |A:{ganrao2}|B:{ganrao1}|C:{guess_up}",
+                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的上面一句是？ |A:{ganrao2}|B:{ganrao1}|C:{guess_up}\n\n请回答大写字母",
                          "C"),
                     ]
                     question2 = random.sample(some, 1)[0]
@@ -127,12 +127,15 @@ def DealData(dls, key):
                 ganrao2 = random.sample(a, 1)[0]
                 if len(guess) > 15:
                     some = [
-                        (f"在论语 {chapter} 中，有这样一句对话: {guess}\n请问它的下面一句是？ \n|A:{guess_down}\n|B:{ganrao1}\n|C:{ganrao2}",
-                         "A"),
-                        (f"在论语 {chapter} 中，有这样一句对话: {guess}\n请问它的下面一句是？ \n|A:{ganrao1}\n|B:{guess_down}\n|C:{ganrao2}",
-                         "B"),
-                        (f"在论语 {chapter} 中，有这样一句对话: {guess}\n请问它的下面一句是？ \n|A:{ganrao2}\n|B:{ganrao1}\n|C:{guess_down}",
-                         "C"),
+                        (
+                        f"在论语 {chapter} 中，有这样一句对话: {guess}\n请问它的下面一句是？ \n|A:{guess_down}\n\n|B:{ganrao1}\n\n|C:{ganrao2}\n\n请回答大写字母",
+                        "A"),
+                        (
+                        f"在论语 {chapter} 中，有这样一句对话: {guess}\n请问它的下面一句是？ \n|A:{ganrao1}\n\n|B:{guess_down}\n\n|C:{ganrao2}\n\n请回答大写字母",
+                        "B"),
+                        (
+                        f"在论语 {chapter} 中，有这样一句对话: {guess}\n请问它的下面一句是？ \n|A:{ganrao2}\n\n|B:{ganrao1}\n\n|C:{guess_down}\n\n请回答大写字母",
+                        "C"),
                     ]
                     question1 = random.sample(some, 1)[0]
                     # question2 = f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的上面一句是？"
