@@ -56,6 +56,10 @@ def DealData(dls, key):
                     pass
                     print(item)
         return DtaDict
+    elif key == "Drive":
+        with open(Dir + "Drive.json", 'r') as drivef:
+            data = json.load(drivef)
+        return {}
 
 
 def WriteOut(content, path, key):
