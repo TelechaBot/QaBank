@@ -57,8 +57,8 @@ def DealData(dls, key):
                     print(item)
         return DtaDict
     elif key == "Drive":
-        with open(Dir + "Drive.json", 'r') as drivef:
-            data = json.load(drivef)
+        # with open(Dir + "Drive.json", 'r') as drivef:
+        #     data = json.load(drivef)
         return {}
 
 

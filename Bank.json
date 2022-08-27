@@ -1,4 +1,11 @@
 {
+    "Drive":{
+        "Domain":"https://raw.githubusercontent.com",
+        "FullUrl":"https://raw.githubusercontent.com/TelechaBot/QaBank/main/Library/Drive.json",
+        "Name":"Drive",
+        "Proxy":"https://raw.fastgit.org",
+        "Url":"/TelechaBot/QaBank/main/Library/Drive.json"
+    },
     "LGBao":{
         "Domain":"https://raw.githubusercontent.com",
         "FullUrl":"https://raw.githubusercontent.com/TelechaBot/QaBank/main/Library/LGBao.json",
