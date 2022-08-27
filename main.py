@@ -1,5 +1,6 @@
 import ast
 import json
+import random
 import time
 
 import requests
@@ -62,6 +63,50 @@ def DealData(dls, key):
         return {}
     elif key == "Bili":
         return {}
+    elif key == "Songci":
+        dls = json.loads(dls)
+        Timu = {}
+        for i in range(6):
+            for i in dls:
+                some = i["paragraphs"]
+                author = i["author"]
+                title = i["rhythmic"]
+                keys = random.randint(2, len(some) - 2)
+                guess_up = some[keys - 1]
+                guess = some[keys]
+                guess_down = some[keys + 1]
+                s = dls[random.randint(2, 60)]["paragraphs"]
+                a = dls[random.randint(2, 60)]["paragraphs"]
+                ganrao1 = random.sample(s, 1)[0]
+                ganrao2 = random.sample(a, 1)[0]
+                if len(guess) > 15:
+                    some = [
+                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的下面一句是？ |A:{guess_down}|B:{ganrao1}|C:{ganrao2}",
+                         "A"),
+                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的下面一句是？ |A:{ganrao1}|B:{guess_down}|C:{ganrao2}",
+                         "B"),
+                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的下面一句是？ |A:{ganrao2}|B:{ganrao1}|C:{guess_down}",
+                         "C"),
+                    ]
+                    question1 = random.sample(some, 1)[0]
+                    # question2 = f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的上面一句是？"
+                    Timu[question1[0]] = question1[1]
+                else:
+                    some = [
+                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的上面一句是？ |A:{guess_up}|B:{ganrao1}|C:{ganrao2}",
+                         "A"),
+                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的上面一句是？ |A:{ganrao1}|B:{guess_up}|C:{ganrao2}",
+                         "B"),
+                        (f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的上面一句是？ |A:{ganrao2}|B:{ganrao1}|C:{guess_up}",
+                         "C"),
+                    ]
+                    question2 = random.sample(some, 1)[0]
+                    # question2 = f"在 {author} 的诗《{title}》中，有这样一句: {guess}\n请问它的上面一句是？"
+                    Timu[question2[0]] = question2[1]
+                # Timu[question2] = guess_up
+                Timu = json.dumps(Timu, sort_keys=True, indent=4, separators=(',', ':'), ensure_ascii=False)
+                Timu = json.loads(Timu)
+        return Timu
 
 
 def WriteOut(content, path, key):
