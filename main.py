@@ -63,6 +63,8 @@ def DealData(dls, key):
         return {}
     elif key == "Bili":
         return {}
+    elif key == "PubChems":
+        return {}
     elif key == "Songci":
         dls = json.loads(dls)
         Timu = {}

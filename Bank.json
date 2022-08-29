@@ -27,6 +27,13 @@
         "Proxy":"https://raw.fastgit.org",
         "Url":"/TelechaBot/QaBank/main/Library/Lunyu.json"
     },
+    "PubChems":{
+        "Domain":"https://raw.githubusercontent.com",
+        "FullUrl":"https://raw.githubusercontent.com/TelechaBot/QaBank/main/Library/PubChems.json",
+        "Name":"PubChems",
+        "Proxy":"https://raw.fastgit.org",
+        "Url":"/TelechaBot/QaBank/main/Library/PubChems.json"
+    },
     "Songci":{
         "Domain":"https://raw.githubusercontent.com",
         "FullUrl":"https://raw.githubusercontent.com/TelechaBot/QaBank/main/Library/Songci.json",
