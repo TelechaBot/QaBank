@@ -13,6 +13,13 @@
         "Proxy":"https://raw.fastgit.org",
         "Url":"/TelechaBot/QaBank/main/Library/Drive.json"
     },
+    "Gaoji":{
+        "Domain":"https://raw.githubusercontent.com",
+        "FullUrl":"https://raw.githubusercontent.com/TelechaBot/QaBank/main/Library/Gaoji.json",
+        "Name":"Gaoji",
+        "Proxy":"https://raw.fastgit.org",
+        "Url":"/TelechaBot/QaBank/main/Library/Gaoji.json"
+    },
     "Idiom":{
         "Domain":"https://raw.githubusercontent.com",
         "FullUrl":"https://raw.githubusercontent.com/TelechaBot/QaBank/main/Library/Idiom.json",
