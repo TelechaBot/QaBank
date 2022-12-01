@@ -45,6 +45,8 @@ def DealData(dls, key):
         return {}
     elif key == "Bili":
         return {}
+    elif key == "Gaoji":
+        return {}
     elif key == "PubChems":
         return {}
     elif key == "Idiom":
