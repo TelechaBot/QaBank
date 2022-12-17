@@ -17,7 +17,7 @@ Question bank for hot loading
 PubChems.json 遵循 https://www.nlm.nih.gov/web_policies.html
 Lunyu.json  来自 https://github.com/chinese-poetry/chinese-poetry ,使用 MIT
 Songci.json 来自 https://github.com/chinese-poetry/chinese-poetry ，使用 MIT
-XXQG.json   来自 https://github.com/mondayfirst/XXQG_TiKu ，根据协议您无法在商业项目使用此数据。
+XXQG.json   来自 https://github.com/mondayfirst/XXQG_TiKu ，根据协议。
 Drive.json  来自 free-api.com 公开的接口数据。
 Idiom.json  遵循 github.com/masongzhi/Scripts 仓库的 MIT 协议。
 Bili.json   来自 百度文库 公开信息，为维护者 手动整理，执行 CC BY-SA 4.0
