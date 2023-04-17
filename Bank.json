@@ -34,26 +34,12 @@
         "Proxy":"https://raw.fastgit.org",
         "Url":"/TelechaBot/QaBank/main/Library/LGBao.json"
     },
-    "Lunyu":{
-        "Domain":"https://raw.githubusercontent.com",
-        "FullUrl":"https://raw.githubusercontent.com/TelechaBot/QaBank/main/Library/Lunyu.json",
-        "Name":"Lunyu",
-        "Proxy":"https://raw.fastgit.org",
-        "Url":"/TelechaBot/QaBank/main/Library/Lunyu.json"
-    },
     "PubChems":{
         "Domain":"https://raw.githubusercontent.com",
         "FullUrl":"https://raw.githubusercontent.com/TelechaBot/QaBank/main/Library/PubChems.json",
         "Name":"PubChems",
         "Proxy":"https://raw.fastgit.org",
         "Url":"/TelechaBot/QaBank/main/Library/PubChems.json"
-    },
-    "Songci":{
-        "Domain":"https://raw.githubusercontent.com",
-        "FullUrl":"https://raw.githubusercontent.com/TelechaBot/QaBank/main/Library/Songci.json",
-        "Name":"Songci",
-        "Proxy":"https://raw.fastgit.org",
-        "Url":"/TelechaBot/QaBank/main/Library/Songci.json"
     },
     "XXQG":{
         "Domain":"https://raw.githubusercontent.com",
